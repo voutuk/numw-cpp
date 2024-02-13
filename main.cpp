@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstdio>
+#include <cctype>
 using namespace std;
 
 int main()
@@ -21,7 +21,7 @@ int main()
     return 0;*/
 
     //TASK-2
-    char str[100];
+    /*char str[100];
     cout << "Enter a string(100 char max): ";
     cin.getline(str, 100);
 
@@ -37,5 +37,16 @@ int main()
     }
 
     if (tmp > max) { max = tmp; } //
-    cout << "Max (A,a): " << max << endl;
+    cout << "Max (A,a): " << max << endl;*/
+    /*char str[100];
+    cout << "Enter a string(100 char max): ";
+    cin.getline(str, 100);
+    int tmpA = 0, tmpB = 0;
+    for (int i = 0; str[i] != '\0'; ++i) {
+        if ((str[i] >= 65 and str[i] <= 90) or (str[i] >= 97 and str[i] <= 122)){
+            if (tolower(str[i]) == 'a' || tolower(str[i]) == 'e' || tolower(str[i]) == 'i' || tolower(str[i]) == 'o' || tolower(str[i]) == 'u') { tmpA++; }
+            else { tmpB++; }
+        }
+    }
+    cout << "Golosni: " << tmpA << " - " << (tmpA+tmpB)*(double(tmpA)/100) << "%" << endl << "Prigolosni: "<< tmpB << " - " << (tmpA+tmpB)*(double(tmpB)/100) << "%"<< endl;*/
 }
