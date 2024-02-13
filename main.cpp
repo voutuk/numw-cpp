@@ -10,7 +10,7 @@ int main()
     cin.getline(str, 100);
 
     for (int i = 0; str[i] != '\0'; ++i) {
-        cout << "Cast: " << static_cast<int>(str[i]);
+        cout << "Cast: " << int(str[i]);
     }
 
     int num = 0;
@@ -38,7 +38,9 @@ int main()
 
     if (tmp > max) { max = tmp; } //
     cout << "Max (A,a): " << max << endl;*/
-    /*char str[100];
+    //TASK-3
+    // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    char str[100];
     cout << "Enter a string(100 char max): ";
     cin.getline(str, 100);
     int tmpA = 0, tmpB = 0;
@@ -48,7 +50,9 @@ int main()
             else { tmpB++; }
         }
     }
-    cout << "Golosni: " << tmpA << " - " << (tmpA+tmpB)*(double(tmpA)/100) << "%" << endl << "Prigolosni: "<< tmpB << " - " << (tmpA+tmpB)*(double(tmpB)/100) << "%"<< endl;*/
+    cout << "Golosni: " << tmpA << " - " << (double(tmpA)/(tmpA+tmpB))*100 << "%" << endl << "Prigolosni: "<< tmpB << " - " << (double(tmpB)/(tmpA+tmpB))*100 << "%"<< endl;
+
+    //TASK-4
     /*const int size = 5;
     char a[size]{'H', 'e', 'l', 'l', 'o'};
     char b[size]{'W', 'o', 'r', 'l', 'd'};
