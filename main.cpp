@@ -49,4 +49,22 @@ int main()
         }
     }
     cout << "Golosni: " << tmpA << " - " << (tmpA+tmpB)*(double(tmpA)/100) << "%" << endl << "Prigolosni: "<< tmpB << " - " << (tmpA+tmpB)*(double(tmpB)/100) << "%"<< endl;*/
+    /*const int size = 5;
+    char a[size]{'H', 'e', 'l', 'l', 'o'};
+    char b[size]{'W', 'o', 'r', 'l', 'd'};
+    char c[(size*2)+2]{};
+    for (int i = 0; i < size; ++i) {
+        c[i] = a[i];
+    }
+    c[size] = ' ';
+    for (int i = 0; i < size; ++i) {
+        c[size + 1 + i] = b[i];
+    }
+    c[(size*2)+1] = '\0'; //
+    cout << c << "|";
+    for (int i = 0; i < (size*2)+2; ++i) {
+        cout << c[i];
+    }
+    cout << "|";*/
+
 }
