@@ -40,7 +40,7 @@ int main()
     cout << "Max (A,a): " << max << endl;*/
     //TASK-3
     // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    char str[100];
+    /*char str[100];
     cout << "Enter a string(100 char max): ";
     cin.getline(str, 100);
     int tmpA = 0, tmpB = 0;
@@ -50,7 +50,7 @@ int main()
             else { tmpB++; }
         }
     }
-    cout << "Golosni: " << tmpA << " - " << (double(tmpA)/(tmpA+tmpB))*100 << "%" << endl << "Prigolosni: "<< tmpB << " - " << (double(tmpB)/(tmpA+tmpB))*100 << "%"<< endl;
+    cout << "Golosni: " << tmpA << " - " << (double(tmpA)/(tmpA+tmpB))*100 << "%" << endl << "Prigolosni: "<< tmpB << " - " << (double(tmpB)/(tmpA+tmpB))*100 << "%"<< endl;*/
 
     //TASK-4
     /*const int size = 5;
@@ -65,10 +65,13 @@ int main()
         c[size + 1 + i] = b[i];
     }
     c[(size*2)+1] = '\0'; //
-    cout << c << "|";
+
+    //cout << c << "|";
+
     for (int i = 0; i < (size*2)+2; ++i) {
         cout << c[i];
     }
     cout << "|";*/
+
 
 }
