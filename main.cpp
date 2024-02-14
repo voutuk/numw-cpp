@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cctype>
+#include <cstring>
 using namespace std;
 
 int main()
@@ -9,7 +10,7 @@ int main()
     cout << "Enter string(100 char max): ";
     cin.getline(str, 100);
 
-    for (int i = 0; str[i] != '\0'; ++i) {
+    for (int i = 0; str[i] != '\0'; ++i) { // !
         cout << "Cast: " << int(str[i]);
     }
 
@@ -36,7 +37,7 @@ int main()
         }
     }
 
-    if (tmp > max) { max = tmp; } //
+    if (tmp > max) { max = tmp; } //!
     cout << "Max (A,a): " << max << endl;*/
     //TASK-3
     // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -64,7 +65,7 @@ int main()
     for (int i = 0; i < size; ++i) {
         c[size + 1 + i] = b[i];
     }
-    c[(size*2)+1] = '\0'; //
+    c[(size*2)+1] = '\0'; //!
 
     //cout << c << "|";
 
@@ -72,6 +73,40 @@ int main()
         cout << c[i];
     }
     cout << "|";*/
+    //TASK-5
+    // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    /*char a[100];
+    cout << "Enter string: ";
+    cin.getline(a, 100);
+    int size = 0;
+    while (a[size] != '\0') {size++;}
+    cout << "Size str: " << size-1 << endl; //!
+    return 0;*/
+    //TASK-6
+    // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
+    /*char a[100];
+    cout << "Enter string: ";
+    cin.getline(a, 100);
+
+    for (int i = 0, ii = strlen(a)-1; i < strlen(a)/2; i++, ii--){ //!
+        //cout << "Swap I: " << i << " II: " << ii<<endl;
+        swap(a[i], a[ii]);
+    }
+    cout << a;*/
+
+    //TASK-7
+    /*char a[100], b, c;
+    cout << "Enter string: ";
+    cin.getline(a, 100);
+    cout << "Enter char(1): ";
+    cin >> b;
+    cout << "Enter char(2): ";
+    cin >> c;
+    for (int i = 0; a[i] != '\0'; ++i) {
+        if (a[i] == b) { a[i] = c; }
+    }
+    cout << a;*/
+    //TASK-8
 
 }
