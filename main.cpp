@@ -108,5 +108,29 @@ int main()
     }
     cout << a;*/
     //TASK-8
+    // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
+    /*char a[256];
+    cout << "Enter string(char 256): ";
+    cin.getline(a, 256);
+
+    int count = 0;
+    bool slovo = false;
+
+    for (int i = 0; a[i] != '\0'; ++i) {
+        // Якщо поточний символ - пробіл, але попередній символ був не пробілом, то це нове слово
+        if (a[i] == ' ' && !slovo) {
+            slovo = true;
+            ++count;
+        }
+        // Якщо поточний символ не пробіл, а попередній символ був пробілом, то починається нове слово
+        else if (a[i] != ' ' && slovo) {
+            slovo = false;
+        }
+    }
+
+    // Додаткова перевірка для випадку, коли текст закінчується словом без пробілу після нього
+    if (a[strlen(a) - 1] != ' '){++count;}
+    cout << "Number: " << count << endl;*/
+    //TASK-9
 }
