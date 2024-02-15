@@ -53,7 +53,7 @@ int main()
     }
     cout << "Golosni: " << tmpA << " - " << (double(tmpA)/(tmpA+tmpB))*100 << "%" << endl << "Prigolosni: "<< tmpB << " - " << (double(tmpB)/(tmpA+tmpB))*100 << "%"<< endl;*/
 
-    //TASK-4
+    //TASK 2.1
     /*const int size = 5;
     char a[size]{'H', 'e', 'l', 'l', 'o'};
     char b[size]{'W', 'o', 'r', 'l', 'd'};
@@ -67,13 +67,15 @@ int main()
     }
     c[(size*2)+1] = '\0'; //!
 
-    //cout << c << "|";
+    cout << c << "|";
 
     for (int i = 0; i < (size*2)+2; ++i) {
         cout << c[i];
     }
-    cout << "|";*/
-    //TASK-5
+    //cout << "|";
+    */
+
+    //TASK 2.2
     // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     /*char a[100];
     cout << "Enter string: ";
@@ -82,9 +84,9 @@ int main()
     while (a[size] != '\0') {size++;}
     cout << "Size str: " << size-1 << endl; //!
     return 0;*/
-    //TASK-6
-    // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
+    //TASK 2.3
+    // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     /*char a[100];
     cout << "Enter string: ";
     cin.getline(a, 100);
@@ -95,7 +97,7 @@ int main()
     }
     cout << a;*/
 
-    //TASK-7
+    //TASK 2.4
     /*char a[100], b, c;
     cout << "Enter string: ";
     cin.getline(a, 100);
@@ -107,30 +109,18 @@ int main()
         if (a[i] == b) { a[i] = c; }
     }
     cout << a;*/
-    //TASK-8
-    // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
-    /*char a[256];
+    //TASK 2.5
+    // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    char a[256];
     cout << "Enter string(char 256): ";
     cin.getline(a, 256);
 
-    int count = 0;
-    bool slovo = false;
+    int tmp = 0;
 
-    for (int i = 0; a[i] != '\0'; ++i) {
-        // Якщо поточний символ - пробіл, але попередній символ був не пробілом, то це нове слово
-        if (a[i] == ' ' && !slovo) {
-            slovo = true;
-            ++count;
-        }
-        // Якщо поточний символ не пробіл, а попередній символ був пробілом, то починається нове слово
-        else if (a[i] != ' ' && slovo) {
-            slovo = false;
-        }
+    for (int i = 0; a[i] != '\0'; i++) {
+        if (a[i] == ' ' && a[i+1] != ' ') { tmp++; }
     }
-
-    // Додаткова перевірка для випадку, коли текст закінчується словом без пробілу після нього
-    if (a[strlen(a) - 1] != ' '){++count;}
-    cout << "Number: " << count << endl;*/
-    //TASK-9
+    tmp++;
+    cout << "Number: " << tmp << endl;
 }
