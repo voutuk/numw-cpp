@@ -112,7 +112,7 @@ int main()
 
     //TASK 2.5
     // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    char a[256];
+    /*char a[256];
     cout << "Enter string(char 256): ";
     cin.getline(a, 256);
 
@@ -122,5 +122,50 @@ int main()
         if (a[i] == ' ' && a[i+1] != ' ') { tmp++; }
     }
     tmp++;
-    cout << "Number: " << tmp << endl;
+    cout << "Number: " << tmp << endl;*/
+
+    //TASK 2.6
+    /*char a[100], b[100];
+    cout << "Enter string1 (char 100): ";
+    cin.getline(a, 100);
+    cout << "Enter string2 (char 100): ";
+    cin.getline(b, 100);
+    if (strcmp(a, b) == false){
+        cout << "TRUE";
+    } else {
+        cout << "FALSE";
+    }*/
+
+    //TASK 2.7
+    // lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+    /*char a[100];
+    cout << "Enter string1 (char 100): ";
+    cin.getline(a, 100);
+    a[0] = toupper(a[0]);
+    for (int i = 0; a[i] != '\0'; ++i) {
+        if (a[i] == ' '){
+            a[i+1] = toupper(a[i+1]);
+        }
+    }
+    cout << a;*/
+
+    //TASK 2.8
+    /*char a[100];
+    cout << "Enter string1 (char 100): ";
+    cin.getline(a, 100);
+    int size = 0;
+    bool tmp = true;
+    for (int i = 0; a[i] != '\0'; i++) { size++; }
+
+    for (int i = 0; i < size/2; ++i){
+        if (a[i] != a[size-i-1]){
+            tmp = false;
+        }
+    }
+    if (tmp){
+        cout << "Palindrom";
+    } else{
+        cout << "Ne Palindrom";
+    }*/
 }
