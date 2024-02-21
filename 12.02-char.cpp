@@ -6,9 +6,9 @@ using namespace std;
 int main()
 {
     //TASK-1
-    /*char str[100];
+    /*char str[101];
     cout << "Enter string(100 char max): ";
-    cin.getline(str, 100);
+    cin.getline(str, 101);
 
     for (int i = 0; str[i] != '\0'; ++i) { // !
         cout << "Cast: " << int(str[i]);
@@ -69,11 +69,11 @@ int main()
 
     cout << c << "|";
 
-    for (int i = 0; i < (size*2)+2; ++i) {
+    /*for (int i = 0; i < (size*2)+2; ++i) {
         cout << c[i];
-    }
-    //cout << "|";
-    */
+    }*/
+    //cout << "|";*/
+
 
     //TASK 2.2
     // Lorem Ipsum is simply dummy text of the printing and typesetting industry.
