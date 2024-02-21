@@ -34,6 +34,28 @@ bool game(int secretNum, int steps){
     }
     return false;
 }
+int game2(int userNumber) {
+    int step = 0;
+    int tmp[100]{};
+    for (int i = 0; i < 100; ++i) {
+        tmp[i] = 0;
+    }
+
+    while (true) {
+        int random = rand() % 101; // Генеруємо випадкове число від 0 до 99
+        // Перевіряємо, чи це число вже було вгадане
+        if (tmp[random] == 0) {
+            //cout << "Pc number: " << random << " " << step << endl;
+            tmp[random] = 1; // Позначаємо, що це число вже вгадане
+            step++; // Збільшуємо кількість спроб
+
+            // Перевіряємо, чи комп'ютер вгадав число користувача
+            if (random == userNumber) {
+                return step;
+            }
+        }
+    }
+}
 
 int main()
 {
@@ -113,8 +135,9 @@ int main()
     for (int i = 0; i < c; ++i) {
         cout << randNUM(min, max) << " ";
     }*/
-    //task 2.2
-    srand(unsigned(time(0)));
+
+    //task 2.2 2.3
+    /*srand(unsigned(time(0)));
 
     int secretNum = rand() % 100;
     int steps = 5; // Кількість спроб
@@ -122,5 +145,20 @@ int main()
     cout << "5 Attemps." << endl;
 
     if (game(secretNum, steps)) { cout << "You win!";}
-    else{ cout << "You lose!"; }
+    else{ cout << "You lose!"; }*/
+
+    //task 2.4
+    srand(unsigned(time(0)));
+    int num;
+    do {
+        cout << "Enter num(0-100): ";
+        cin >> num;
+        if (num < 0 or num > 100) {
+            cout << "\nError number." << endl;
+        }
+    } while (num < 0 or num > 100);
+    int attempts = game2(num);
+
+    cout << "Pc find number " << num << " attempts: " << attempts << endl;
+
 }
