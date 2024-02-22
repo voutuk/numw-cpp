@@ -15,7 +15,7 @@ int main()
     }
 
     int num = 0;
-    for (int i = 0; str[i] != '\0'; ++i) { /bug
+    for (int i = 0; str[i] != '\0'; ++i) {
         if(str[i] >= 48 && str[i] <= 57) {num++;} //?
     }
     cout << "Num: " << num << endl;
@@ -67,12 +67,12 @@ int main()
     }
     c[(size*2)+1] = '\0'; //!
 
-    cout << c << "|";
+    //cout << c << "|";
 
-    /*for (int i = 0; i < (size*2)+2; ++i) {
+    for (int i = 0; i < (size*2)+2; ++i) {
         cout << c[i];
-    }*/
-    //cout << "|";*/
+    }
+    cout << "|";*/
 
 
     //TASK 2.2
@@ -151,7 +151,7 @@ int main()
     cout << a;*/
 
     //TASK 2.8
-    /*char a[100];
+    char a[100];
     cout << "Enter string1 (char 100): ";
     cin.getline(a, 100);
     int size = 0;
@@ -167,5 +167,5 @@ int main()
         cout << "Palindrom";
     } else{
         cout << "Ne Palindrom";
-    }*/
+    }
 }
