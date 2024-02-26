@@ -31,14 +31,14 @@ double deg_to_rad(double deg) {
 
 int main(){
     //TASK-1
-    double num;
+    /*double num;
     cout << "Enter angle in degrees: ";
     cin >> num;
     num = deg_to_rad(num);
 
     double z2 = 2 * sin(num);
     double z1 = (sin(2*num) + sin(5*num) - sin(3*num))/(cos(num) + 1 - 2*pow(sin(2*num), 2));
-    cout << "Z1: " << z1 << endl << "Z2: " << z2 << endl;
+    cout << "Z1: " << z1 << endl << "Z2: " << z2 << endl;*/
 
     //TASK-2
     /*int num = checkNUM();
