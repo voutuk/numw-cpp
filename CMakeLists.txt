@@ -4,6 +4,8 @@ project(numw_)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(numw_
-        19.02.cpp)
+        file-task.cpp)
 # 19.02.cpp
 # 12.02-char.cpp
+# consp-file.cpp
+# file-task.cpp
