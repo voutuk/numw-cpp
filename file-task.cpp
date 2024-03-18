@@ -7,9 +7,9 @@ bool palindrom(string word) {
 }
 
 int main (){
-    //task1
-
-    /*ifstream fileF("f"); //Читання
+    //task1   https://www.random.org/sequences/?min=1&max=100&col=1&format=html&rnd=new
+    /*
+    ifstream fileF("f"); //Читання
     ofstream fileG("g"); //Запис
     if (!fileF.is_open() || !fileG.is_open()){
         cout << "File not found" << endl;
@@ -23,8 +23,8 @@ int main (){
     }
     fileG.close();
     fileF.close();
-    return 0;*/
-
+    return 0;
+    */
     //task2
     /*ofstream fileG("g"); //Запис
     if (!fileG.is_open()){
