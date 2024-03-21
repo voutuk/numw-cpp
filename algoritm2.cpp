@@ -110,7 +110,7 @@ int main() {
     cout << "y = " << result << endl;*/
 
     // Task 3
-    double x, y, z;
+    /*double x, y, z;
 
     x = checkNUM('x');
     y = checkNUM('y');
@@ -127,5 +127,5 @@ int main() {
     double m = maxNum / minNum;
     cout << "m = " << m << endl;
 
-    return 0;
+    return 0;*/
 }
