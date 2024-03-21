@@ -56,7 +56,7 @@ double findMax(double x, double y) {
 }
 
 int main() {
-    //Task 1
+    //TODO: Task 1
     /*double y, x, z, b;
 
     cout << "Enter z: ";
@@ -80,7 +80,7 @@ int main() {
         y = -M_PI + pow(cos(x * x * x), 2) + pow(sin(x * x), 3);
         cout << "Branch 2: " << y;
     }*/
-    // Task 2
+    //TODO: Task 2
     /*double a, b, z, y, function;
     a = checkNUM('a');
     b = checkNUM('b');
@@ -109,7 +109,7 @@ int main() {
     double result = findY(z, a, b, function);
     cout << "y = " << result << endl;*/
 
-    // Task 3
+    //TODO: Task 3
     /*double x, y, z;
 
     x = checkNUM('x');
