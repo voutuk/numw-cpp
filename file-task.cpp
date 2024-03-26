@@ -8,8 +8,8 @@ bool palindrom(string word) {
 
 int main (){
     //task1   https://www.random.org/sequences/?min=1&max=100&col=1&format=html&rnd=new
-    /*
-    ifstream fileF("f"); //Читання
+
+    /*ifstream fileF("f"); //Читання
     ofstream fileG("g"); //Запис
     if (!fileF.is_open() || !fileG.is_open()){
         cout << "File not found" << endl;
@@ -23,8 +23,8 @@ int main (){
     }
     fileG.close();
     fileF.close();
-    return 0;
-    */
+    return 0;*/
+
     //task2
     /*ofstream fileG("g"); //Запис
     if (!fileG.is_open()){
@@ -40,7 +40,7 @@ int main (){
     }
     fileG.close();*/
 
-    /*ifstream fileG("g"); //Читання з файлу
+    ifstream fileG("g"); //Читання з файлу
     if (!fileG.is_open()){
         cout << "File not found" << endl;
         return 0;
@@ -75,10 +75,10 @@ int main (){
     }
     fileG.close();
 
-    std::cout << "Top-3:\n";
-    std::cout << "1. " << name1 << " - " << max1 << " points\n";
-    std::cout << "2. " << name2 << " - " << max2 << " points\n";
-    std::cout << "3. " << name3 << " - " << max3 << " points\n";*/
+    cout << "Top-3:\n";
+    cout << "1. " << name1 << " - " << max1 << " points\n";
+    cout << "2. " << name2 << " - " << max2 << " points\n";
+    cout << "3. " << name3 << " - " << max3 << " points\n";
 
     //task3
     /*fstream fileG("g"); //Читання з файлу
@@ -109,7 +109,7 @@ int main (){
     }*/
     //task 5
     //ofstream fileG("g"); //Запис з файлу
-    ifstream fileG("g"); //Читання з файлу
+    /*ifstream fileG("g"); //Читання з файлу
     if (!fileG.is_open()){
         cout << "File not found" << endl;
         return 0;
@@ -154,7 +154,7 @@ int main (){
         cout << "FAIL" << endl;
     } else {
         cout << "Index: " << ind << endl;
-    }
+    }*/
 
     /*int rows = 10, cols = 10;
     fileG << rows << '\n' << cols << "\n";
